@@ -78,4 +78,4 @@ This repository contains the web application and pretrained inference artifacts,
 
 Existing researcher credits and institutional/third-party imagery are retained from the source application. No new blanket license is granted over model artifacts, portraits or third-party assets. See [attribution notes](docs/attribution.md).
 
-For uploading this prepared directory, see [GitHub upload instructions](docs/upload-to-github.md). No GitHub repository has been created or uploaded as part of this package.
+The public repository is [TerrificXu/diabetic-retinopathy-web](https://github.com/TerrificXu/diabetic-retinopathy-web). The ensemble artifact is stored in Git LFS. For publishing a separate copy, see [GitHub upload instructions](docs/upload-to-github.md).

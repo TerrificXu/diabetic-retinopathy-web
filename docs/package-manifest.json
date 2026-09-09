@@ -98,8 +98,8 @@
     },
     {
       "path": "docs/upload-to-github.md",
-      "bytes": 1700,
-      "sha256": "7ccd5d24fd939790426b9366e585d082c0cd2930ad62c11caff16f2f8b677d42"
+      "bytes": 1950,
+      "sha256": "ffae5e38d8ce93ba77fef2647ca4a1379cd3e1191bfe4f48b8d76e206fa058e3"
     },
     {
       "path": "docs/verification.md",
@@ -358,8 +358,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 4107,
-      "sha256": "41d4fd1a1cace7039db90ec65ac8be50356af1d4a7e2f2e9fb68ea6b30f93da0"
+      "bytes": 4189,
+      "sha256": "1b66bcef6ad340f3408f1bc44160ac6459ae249b0d382243df079cfa6a287878"
     }
   ]
 }

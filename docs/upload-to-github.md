@@ -1,5 +1,7 @@
 # 将此目录上传到 GitHub
 
+本项目已上传到公开仓库 https://github.com/TerrificXu/diabetic-retinopathy-web 。以下初始化步骤仅供发布另一个独立副本参考；现有目录已完成 Git 初始化并关联 origin，不要重复执行。
+
 此文件所在目录的上一级是仓库根目录。包内已经包含两个开放模型和配套 scaler；没有包含 RuleFit、Pruned RuleFit 或原来的 Git 历史。
 
 ## 大模型必须使用 Git LFS
@@ -27,15 +29,15 @@ git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
 git push -u origin main
 ```
 
-将示例地址替换为你自己的空仓库地址。这里没有为你执行初始化、提交、创建远程仓库或上传。LFS 使用量受你的 GitHub 账户配额约束。
+将示例地址替换为你自己的空仓库地址。现有发布目录已完成初始化、提交、创建远程仓库及上传。LFS 使用量受你的 GitHub 账户配额约束。
 
 不要漏传以点开头的 .gitignore 和 .gitattributes。首次提交前可阅读 release-notes.md，了解发布副本与原项目的区别。原项目目录未修改。
 
 其他人获取模型：
 
 ```powershell
-git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
-cd YOUR_REPOSITORY
+git clone https://github.com/TerrificXu/diabetic-retinopathy-web.git
+cd diabetic-retinopathy-web
 git lfs pull
 ```
 
