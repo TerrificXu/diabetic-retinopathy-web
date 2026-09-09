@@ -1,0 +1,19 @@
+{
+  "models": [
+    {
+      "path": "backend/models/Elaborative XGBoost.json",
+      "bytes": 280279,
+      "sha256": "ddc5df9352e6718c8ead845356075988da6d08e53e4d0d687a95731832c385d3"
+    },
+    {
+      "path": "backend/models/Two-level Ensemble/scaler.pkl",
+      "bytes": 1999,
+      "sha256": "586741a80ac4af64346a15331a3fc4316125ea4c7d0402444ec6d11396e478c5"
+    },
+    {
+      "path": "backend/models/Two-level Ensemble/Two-level Ensemble.pkl",
+      "bytes": 702816259,
+      "sha256": "d5f3b598377de394a8a84d2e312c6ad1bd5c0289faf7e49cf2a5992683dd0628"
+    }
+  ]
+}

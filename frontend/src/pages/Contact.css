@@ -1,0 +1,68 @@
+.contact-container {
+    width: 75%;
+    margin: 0 auto;
+    padding: 2rem 0;
+    font-family: inherit;
+}
+
+.contact-section {
+    padding: 1rem 0;
+}
+
+.contact-divider {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 2rem 0;
+}
+
+.map-container {
+    margin-top: 1rem;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+/* 统一所有输入框和文本域的宽度 */
+.form-group input,
+.form-group textarea {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
+    width: 100%;
+}
+
+/* 针对 Message: 对应的 textarea 进行调整：
+   只允许垂直调节（禁止水平调节），最小高度设置为40px */
+.form-group textarea {
+    resize: vertical;
+    min-height: 40px;
+}
+
+.contact-submit {
+    padding: 0.75rem;
+    border: none;
+    background-color: #fa6400;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    align-self: flex-start;
+}
+
+.contact-submit:hover {
+    background-color: #ff8b32;
+}

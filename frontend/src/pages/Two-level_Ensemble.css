@@ -1,0 +1,270 @@
+/* ========== Two-level Ensemble 页面专用 ========== */
+.two-level-ensemble-page {
+    width: 75%;
+    margin: 0 auto;
+    padding: 1rem 0;
+    font-family: Arial, sans-serif;
+}
+
+.two-level-ensemble-page .layout-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+/* ---------- 左侧部分 ---------- */
+.two-level-ensemble-page .orientation-left {
+    flex: 0 0 60%;
+    margin-top: 4rem;
+}
+
+.two-level-ensemble-page .left-title {
+    font-size: 4em;
+    color: #333;
+    margin: 0;
+}
+
+.two-level-ensemble-page .subtitle {
+    font-weight: bold;
+    color: #666;
+    margin: 0.5rem 0;
+    font-size: 1rem;
+}
+
+.two-level-ensemble-page .prediction-form-container {
+    margin-top: 2rem;
+}
+
+.two-level-ensemble-page .enter-features {
+    color: #333;
+    margin-top: 2.25rem;
+    font-size: 1.5rem;
+}
+
+.two-level-ensemble-page .prediction-divider {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 2.25rem 0;
+}
+
+.two-level-ensemble-page .prediction-result-title {
+    color: #333;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.two-level-ensemble-page .prediction-result-value {
+    text-align: right;
+    color: #f15a22;
+    font-family: "Cooper Black", sans-serif;
+    font-size: 3.25rem;
+    margin-top: 6rem;
+    margin-bottom: 0;
+}
+
+.two-level-ensemble-page .prediction-result-arcs {
+    width: 100%;
+    text-align: right;
+    margin-top: 0;
+    margin-bottom: 6rem;
+    display: inline-block;
+}
+
+.two-level-ensemble-page .arc-svg {
+    display: block;
+    width: 105%;
+    height: 25px;
+}
+
+.two-level-ensemble-page .second-arc-svg {
+    margin-top: 0;
+}
+
+/* ---------- 特征项 ---------- */
+.two-level-ensemble-page .feature-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #333;
+    font-size: 1rem;
+}
+
+.two-level-ensemble-page .feature-group input,
+.two-level-ensemble-page .feature-group select {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.two-level-ensemble-page input[type=number]::-webkit-inner-spin-button,
+.two-level-ensemble-page input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.two-level-ensemble-page input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/* “Predict” 按钮 */
+.two-level-ensemble-page .contact-submit {
+    padding: 0.75rem;
+    border: none;
+    background-color: #fa6400;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    align-self: flex-start;
+    transition: background-color 0.3s ease;
+}
+.two-level-ensemble-page .contact-submit:hover {
+    background-color: #ff8b32;
+}
+
+/* ---------- 右侧部分保持不变 ---------- */
+.two-level-ensemble-page .orientation-right {
+    flex: 0 0 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 4rem;
+}
+
+/* ……其余样式同 Pruned_RuleFit.css …… */
+.two-level-ensemble-page .sidebar-section {
+    position: relative;
+    width: 100%;
+    padding: 2rem;
+    text-decoration: none;
+}
+
+.two-level-ensemble-page .content-wrapper {
+    margin-top: 1.5rem;
+}
+
+.two-level-ensemble-page .orange-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 5px;
+    width: 100%;
+    background-color: #f15a22;
+}
+
+.two-level-ensemble-page .clickable-section {
+    background-color: #f15a22;
+    color: #fff;
+    padding-top: 2.5rem;
+    transition: box-shadow 0.3s ease;
+}
+.two-level-ensemble-page .clickable-section:hover {
+    box-shadow: inset 0 0 0 7.5px #ffb347;
+}
+.two-level-ensemble-page .clickable-section::after {
+    content: "";
+    position: absolute;
+    bottom: 20px;
+    left: 2rem;
+    width: 50px;
+    height: 4px;
+    background-color: #ffb347;
+}
+
+.two-level-ensemble-page .drive-logo {
+    height: 2rem;
+    width: auto;
+}
+
+.two-level-ensemble-page .waiver-text {
+    font-size: 1.1rem;
+    margin-top: 0.25rem;
+    font-weight: bold;
+}
+.two-level-ensemble-page .doi-text {
+    font-size: 0.85rem;
+    margin-top: 0.25rem;
+}
+
+/* 联系信息区 */
+.two-level-ensemble-page .contact-section {
+    background-color: #F1F1F1;
+    color: #333;
+    font-weight: bold;
+}
+.two-level-ensemble-page .contact-section h2 {
+    margin: 0 0 0.5rem 0;
+}
+.two-level-ensemble-page .contact-section p {
+    margin: 0.5rem 0;
+}
+.two-level-ensemble-page .contact-section a.phone-email {
+    color: #40547B;
+    text-decoration: none;
+    transition: filter 0.3s ease;
+}
+.two-level-ensemble-page .contact-section a.phone-email:hover {
+    filter: brightness(1.4);
+}
+
+/* 底部区：支持信息 */
+.two-level-ensemble-page .to-be-edited-section {
+    background-color: #111;
+    color: #fff;
+}
+.two-level-ensemble-page .to-be-edited-section .supported-by {
+    font-size: 1.2rem;
+    margin: 0;
+    color: #f15a22;
+}
+.two-level-ensemble-page .to-be-edited-section .sponsor {
+    font-size: 1.5rem;
+    margin: 0.25rem 0 0 0;
+}
+
+/* 右上角白色箭头 */
+.two-level-ensemble-page .arrow-icon.arrow-white {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 18px;
+    height: 18px;
+    border-top: 3px solid #fff;
+    border-right: 3px solid #fff;
+    transform: rotate(-135deg);
+}
+
+/* ---------- 输入框 placeholder 样式 ---------- */
+.two-level-ensemble-page .feature-group input::placeholder {
+    color: #ccc;
+    font-style: italic;
+}
+
+/* ---------- 下拉框 placeholder 效果 ---------- */
+/* 通过 select-wrapper 包裹下拉框，并利用伪元素显示提示文本 */
+.select-wrapper {
+    position: relative;
+}
+
+.select-wrapper::before {
+    content: attr(data-placeholder);
+    position: absolute;
+    left: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ccc;
+    font-style: italic;
+    pointer-events: none;
+}
+
+/* 当 select-wrapper 内 select 有值后，使用 JS 添加 has-value 类后隐藏提示 */
+.select-wrapper.has-value::before {
+    display: none;
+}

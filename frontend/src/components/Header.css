@@ -1,0 +1,252 @@
+/* 整体头部布局 */
+.site-header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* 顶部快速链接区域 */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111;
+    color: #fff;
+    padding: 0.5rem 1rem;
+}
+
+.top-bar-left {
+    display: flex;
+    align-items: center;
+}
+
+.top-bar-left .logo img {
+    height: 50px;
+    margin-right: 1rem;
+}
+
+/* site-title 链接：两行文字，各自独立显示，并添加下划线渐变效果 */
+.site-title {
+    text-decoration: none;
+    color: inherit;
+    margin-left: 0.5rem;
+    line-height: 1.2;
+    display: inline-block;
+}
+
+.site-title .line1,
+.site-title .line2 {
+    display: inline-block;
+    position: relative;
+}
+
+/* 下划线默认状态：全宽、细线、透明 */
+.site-title .line1::after,
+.site-title .line2::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 0.5px;
+    background-color: currentColor;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* 悬停时，下划线淡入显示，透明度设为 0.5 */
+.site-title:hover .line1::after,
+.site-title:hover .line2::after {
+    opacity: 0.5;
+}
+
+.top-bar-right {
+    display: flex;
+    align-items: center;
+}
+
+.quick-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.quick-links li {
+    margin-left: 1rem;
+}
+
+.quick-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.quick-links a:hover {
+    color: #fa6400;
+}
+
+.apply-button {
+    background-color: #fa6400;
+    color: #fff;
+    padding: 0.4rem 0.8rem;
+    text-decoration: none;
+    margin-left: 1rem;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.apply-button:hover {
+    background-color: #ff8b32;
+}
+
+/* Hero Banner 房屋图片背景 */
+.hero-banner {
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+}
+
+.hero-content {
+    color: #fff;
+    position: absolute;
+    bottom: 1rem;
+    left: 2rem;
+}
+
+/* 主导航区域，全宽显示背景 */
+.main-nav {
+    background-color: #f5f5f5;
+    padding: 0.5rem 0; /* 仅设置垂直内边距，让背景条保持全宽 */
+}
+
+/* 仅调整快速链接文字区域，宽度为75%，居中 */
+.nav-text-container {
+    width: 75%;
+    margin: 0 auto;
+    padding: 0 1rem; /* 如有需要，可调整左右内边距 */
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav li {
+    margin-right: 1rem;
+    position: relative;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.main-nav a:hover {
+    color: #fa6400;
+}
+
+/* 下拉菜单 */
+.dropdown:hover .dropdown-menu {
+    display: block !important;
+}
+
+.dropdown-menu {
+    display: none !important; /* 默认隐藏 */
+    position: absolute;
+    background-color: #fff;
+    margin-top: 0.5rem;
+    padding: 0.5rem 0;
+    list-style: none;
+    min-width: 180px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.dropdown-menu li {
+    margin: 0;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #333;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f2f2f2;
+    color: #fa6400;
+}
+
+/* 保持原有的头部样式不变 … */
+
+/* 新增：横幅覆盖在房屋图片上 */
+.header-banner {
+    position: absolute;
+    bottom: 0;             /* 横幅下边缘贴合房屋图片底部 */
+    left: 11.8rem;            /* 左边距 2rem，不贴到最左边 */
+
+    background-color: #f15a22;  /* OSU 官方橙色 */
+    color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    display: inline-block; /* 宽度跟随内容自动调整 */
+    width: fit-content;    /* 根据文字长度自适应 */
+    /* 增大右侧内边距，让橙色背景超出文字边界 */
+    padding: 0.5rem 3rem 0.5rem 1.5rem;
+}
+
+/* 新增：在横幅左侧割出一小块 */
+.header-banner::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 10px;           /* 很窄的小矩形 */
+    height: 100%;
+    background-color: #ffb347;  /* 浅橘黄色 */
+}
+
+/* 横幅中的两行文字 */
+.banner-line1,
+.banner-line2 {
+    display: block;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.banner-line1 {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.banner-line2 {
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+/* 当导航链接处于 active 状态时，文字颜色设置为 OSU 官方橘黄色 */
+.main-nav a.active {
+    color: #f15a22;
+}
+.main-nav a.active {
+    color: #f15a22;
+}

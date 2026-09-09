@@ -1,0 +1,161 @@
+/* ====== 整体容器 ====== */
+.home-container {
+    width: 75%;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    padding: 4rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* ====== 每个区块的基础样式 ====== */
+.section {
+    display: flex;
+    flex-wrap: wrap; /* 小屏下自动换行 */
+    gap: 2rem;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+/* ====== 顶部区块：Orientation + Ready to join... ====== */
+.top-section {
+    flex-wrap: nowrap; /* 强制同行 */
+}
+
+/* 左侧：Orientation and Enrollment，占 6/10 */
+.orientation-left {
+    flex: 0 0 60%;
+}
+
+/* 右侧：Ready to join...，占 3/10 */
+.orientation-right {
+    flex: 0 0 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 深色背景盒子，左对齐 */
+.dark-box {
+    background-color: #333;
+    padding: 1.5rem;
+    border-radius: 0;
+    width: 100%;
+    text-align: left; /* 由原先 center 改为 left */
+}
+
+/* 专用于右侧标题的 class，确保为白色 */
+.white-title {
+    color: #fff !important;
+    margin: 0;
+}
+
+/* dark-box 内描述文字 */
+.dark-box-text {
+    color: #fff;
+    margin: 1rem 0;
+}
+
+/* Enrollment Deposit 链接：OSU 官方橙，悬停时亮度变为 1.35 */
+.enroll-link {
+    color: #f15a22;
+    font-weight: bold;
+    text-decoration: none;
+    transition: filter 0.3s ease;
+}
+
+.enroll-link:hover {
+    filter: brightness(1.35);
+}
+
+/* ====== 其他区块：housing 和 aid ====== */
+.text-block {
+    flex: 1 1 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+}
+
+.image-block {
+    flex: 1 1 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-block img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 0; /* 四角直角 */
+}
+
+/* 标题统一颜色（非右侧标题） */
+.section h1 {
+    font-size: 4em;
+    color: #333;
+    margin: 0;
+}
+
+/* 副标题 */
+.subtitle {
+    font-weight: bold;
+    color: #666;
+}
+
+/* 段落文字 */
+.description {
+    font-size: 1em;
+    line-height: 1.5;
+    color: #333;
+}
+.description_1 {
+    font-size: 1.25em;
+    line-height: 1.5;
+    color: #333;
+}
+
+/* ====== 橙色按钮及悬停效果 ====== */
+.primary-button {
+    background-color: #f15a22;
+    color: #fff;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 0; /* 四角直角 */
+    position: relative;
+    transition: background-color 0.3s ease;
+    align-self: flex-start;
+    width: auto;
+    overflow: hidden;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.primary-button:hover {
+    background-color: #f15a22;
+}
+
+.primary-button::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    background-color: #ffb347;
+    transition: height 0.3s ease;
+}
+
+.primary-button:hover::after {
+    height: 4px;
+}
+
+/* 首页第2、3、4、5 块标题由 h1 调整为略小的字体 */
+.section .text-block h1 {
+    font-size: 3rem;  /* 根据需要再微调，比如 1.6rem 或 1.8rem */
+    line-height: 1.2;    /* 保证行高协调，可选 */
+}

@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block title %}Homepage{% endblock %}
+
+{% block content %}
+<h1>Model Predictions</h1>
+<form method="POST">
+    {{ form.hidden_tag() }}
+    <label for="model">Select Model:</label>
+    {{ form.model() }}
+    <br>
+    {% for field in form if field.name.startswith("feature_") %}
+    <label for="{{ field.id }}">{{ field.label.text }}</label>
+    {{ field() }}
+    <br>
+    {% endfor %}
+
+    {{ form.submit() }}
+</form>
+{% endblock %}
+

@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+
+{% block title %}Predicted Result{% endblock %}
+
+{% block content %}
+<h1>Predicted Result</h1>
+<p>Model: {{ model_name }}</p>
+<p>Predicted Value: <strong>{{ prediction }}</strong></p>
+<a href="{{ url_for('index') }}">Back to Homepage</a>
+{% endblock %}

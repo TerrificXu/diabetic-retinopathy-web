@@ -1,0 +1,261 @@
+/* ========== Elaborative XGBoost 页面专用 ========== */
+.elaborative-xgboost-page {
+    width: 75%;
+    margin: 0 auto;
+    padding: 1rem 0;
+    font-family: Arial, sans-serif;
+}
+
+.elaborative-xgboost-page .layout-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+/* ---------- 左侧 ---------- */
+.elaborative-xgboost-page .orientation-left {
+    flex: 0 0 60%;
+    margin-top: 4rem;
+}
+
+.elaborative-xgboost-page .left-title {
+    font-size: 4em;
+    color: #333;
+    margin: 0;
+}
+
+.elaborative-xgboost-page .subtitle {
+    font-weight: bold;
+    color: #666;
+    margin: 0.5rem 0;
+    font-size: 1rem;
+}
+
+.elaborative-xgboost-page .prediction-form-container {
+    margin-top: 2rem;
+}
+
+.elaborative-xgboost-page .prediction-form-container h2.enter-features {
+    color: #333;
+    margin-top: 2.25rem;
+    font-size: 1.5rem;
+}
+
+.elaborative-xgboost-page .prediction-divider {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 2.25rem 0;
+}
+
+.elaborative-xgboost-page .prediction-result-title {
+    color: #333;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.elaborative-xgboost-page .prediction-result-value {
+    text-align: right;
+    color: #f15a22;
+    font-family: "Cooper Black", sans-serif;
+    font-size: 3.25rem;
+    margin-top: 6rem;
+    margin-bottom: 0rem;
+}
+
+.elaborative-xgboost-page .prediction-result-arcs {
+    width: 100%;
+    text-align: right;
+    margin-top: 0;
+    margin-bottom: 6rem;
+    display: inline-block;
+}
+
+.elaborative-xgboost-page .arc-svg {
+    display: block;
+    width: 105%;
+    height: 25px;
+}
+
+.elaborative-xgboost-page .second-arc-svg {
+    margin-top: 0;
+}
+
+/* 特征输入组 */
+.elaborative-xgboost-page .feature-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #333;
+    font-size: 1rem;
+}
+
+.elaborative-xgboost-page .feature-group input,
+.elaborative-xgboost-page .feature-group select {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.elaborative-xgboost-page input[type=number]::-webkit-inner-spin-button,
+.elaborative-xgboost-page input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.elaborative-xgboost-page input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.elaborative-xgboost-page .contact-submit {
+    padding: 0.75rem;
+    border: none;
+    background-color: #fa6400;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    align-self: flex-start;
+    transition: background-color 0.3s ease;
+}
+.elaborative-xgboost-page .contact-submit:hover {
+    background-color: #ff8b32;
+}
+
+/* ---------- 右侧 ---------- */
+.elaborative-xgboost-page .orientation-right {
+    flex: 0 0 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 4rem;
+}
+
+.elaborative-xgboost-page .sidebar-section {
+    position: relative;
+    width: 100%;
+    padding: 2rem;
+    text-decoration: none;
+}
+
+.elaborative-xgboost-page .content-wrapper {
+    margin-top: 1.5rem;
+}
+
+.elaborative-xgboost-page .orange-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 5px;
+    width: 100%;
+    background-color: #f15a22;
+}
+
+.elaborative-xgboost-page .clickable-section {
+    background-color: #f15a22;
+    color: #fff;
+    padding-top: 2.5rem;
+    transition: box-shadow 0.3s ease;
+}
+.elaborative-xgboost-page .clickable-section:hover {
+    box-shadow: inset 0 0 0 7.5px #ffb347;
+}
+.elaborative-xgboost-page .clickable-section::after {
+    content: "";
+    position: absolute;
+    bottom: 20px;
+    left: 2rem;
+    width: 50px;
+    height: 4px;
+    background-color: #ffb347;
+}
+
+.elaborative-xgboost-page .ssrn-logo {
+    height: 2rem;
+    width: auto;
+}
+
+.elaborative-xgboost-page .waiver-text {
+    font-size: 1.1rem;
+    margin-top: 0.25rem;
+    font-weight: bold;
+}
+.elaborative-xgboost-page .doi-text {
+    font-size: 0.85rem;
+    margin-top: 0.25rem;
+}
+
+.elaborative-xgboost-page .contact-section {
+    background-color: #F1F1F1;
+    color: #333;
+    font-weight: bold;
+}
+.elaborative-xgboost-page .contact-section h2 {
+    margin: 0 0 0.5rem 0;
+}
+.elaborative-xgboost-page .contact-section p {
+    margin: 0.5rem 0;
+}
+.elaborative-xgboost-page .contact-section a.phone-email {
+    color: #40547B;
+    text-decoration: none;
+    transition: filter 0.3s ease;
+}
+.elaborative-xgboost-page .contact-section a.phone-email:hover {
+    filter: brightness(1.4);
+}
+
+.elaborative-xgboost-page .to-be-edited-section {
+    background-color: #111;
+    color: #fff;
+}
+.elaborative-xgboost-page .to-be-edited-section .supported-by {
+    font-size: 1.2rem;
+    margin: 0;
+    color: #f15a22;
+}
+.elaborative-xgboost-page .to-be-edited-section .sponsor {
+    font-size: 1.5rem;
+    margin: 0.25rem 0 0 0;
+}
+
+.elaborative-xgboost-page .arrow-icon.arrow-white {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 18px;
+    height: 18px;
+    border-top: 3px solid #fff;
+    border-right: 3px solid #fff;
+    transform: rotate(-135deg);
+}
+
+.elaborative-xgboost-page .feature-group input::placeholder {
+    color: #ccc;
+    font-style: italic;
+}
+
+.select-wrapper {
+    position: relative;
+}
+
+.select-wrapper::before {
+    content: attr(data-placeholder);
+    position: absolute;
+    left: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ccc;
+    font-style: italic;
+    pointer-events: none;
+}
+
+.select-wrapper.has-value::before {
+    display: none;
+}

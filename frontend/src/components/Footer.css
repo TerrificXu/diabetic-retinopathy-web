@@ -1,0 +1,292 @@
+/* 整个尾部区域：黑色背景，全宽 */
+.main-footer {
+    background-color: #111;
+    color: #fff;
+    position: relative;
+    font-family: Arial, sans-serif;
+    padding: 0;
+}
+
+/* 容器宽度75%，居中 */
+.footer-container {
+    width: 75%;
+    margin: 0 auto;
+    padding: 1rem 0 2rem 0;
+}
+
+/* Back to Top 按钮 */
+.back-to-top-parent {
+    position: absolute;
+    top: 0;
+    right: 1rem;
+}
+.back-to-top {
+    color: #fff;
+    text-decoration: none;
+    background-color: #333;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border-radius: 0;
+    transition: background-color 0.3s;
+}
+.back-to-top:hover {
+    background-color: #f15a22;
+}
+
+/* 上半部分：左右两列，左66.7%，右33.3% */
+.footer-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 3rem 0 2rem 0;
+}
+
+.footer-top-left {
+    width: 66.7%;
+    margin-right: 2rem;
+}
+
+.footer-top-right {
+    width: 33.3%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* 标题 */
+.footer-college-title {
+    color: #f15a22;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+/* 图片+文字并排 */
+.footer-info-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+.footer-office-img {
+    width: 300px;
+    height: auto;
+}
+
+/* 地址链接部分：灰色文字+下划线 */
+.footer-address a {
+    display: inline-block;
+    padding: 0 2px;
+    color: #ccc;
+    font-weight: 500;
+    text-decoration: underline;
+    text-decoration-color: #ccc;
+    text-decoration-thickness: 1.5px;
+    text-decoration-skip-ink: auto;
+    text-underline-offset: 1px;
+    transition: color 0.5s ease, text-decoration-color 0.5s ease;
+}
+.footer-address a:hover {
+    color: #fff;
+    text-decoration-color: transparent;
+}
+.footer-address p {
+    margin: 0.5rem 0;
+}
+
+/* Follow CEAT 标题 */
+.footer-follow-title {
+    color: #f15a22;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+/* 链接列表 */
+.footer-follow-links {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1rem 0;
+    text-align: left;
+}
+.footer-follow-links li {
+    margin-bottom: 0.4rem;
+}
+.footer-follow-links a {
+    display: inline-block;
+    padding: 0 2px;
+    color: #ccc;
+    font-weight: 500;
+    text-decoration: underline;
+    text-decoration-color: #ccc;
+    text-decoration-thickness: 1.5px;
+    text-decoration-skip-ink: auto;
+    text-underline-offset: 1px;
+    transition: color 0.5s ease, text-decoration-color 0.5s ease;
+}
+.footer-follow-links a:hover {
+    color: #fff;
+    text-decoration-color: transparent;
+}
+
+/* 社交图标容器 */
+.footer-social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* 每个图标链接 */
+.footer-social-icons a {
+    display: inline-block;
+    margin-right: 10px; /* 留出不可点击的空隙 */
+    text-decoration: none;
+}
+.footer-social-icons a:last-child {
+    margin-right: 0;
+}
+
+/* 将图标改为 60×60 */
+.social-icon-img {
+    width: 60px;
+    height: 60px;
+}
+
+/* 分割线 */
+.footer-divider {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #444;
+    margin: 0 auto 1rem auto;
+}
+
+/* 下半部分 */
+.footer-bottom {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding-top: 1.5rem;
+    border-top: 1px solid #444;
+    gap: 2rem;
+}
+
+.footer-bottom-left {
+    flex-shrink: 0;
+}
+
+.footer-osu-logo img {
+    height: 55px; /* 原来 45px，增大 50% */
+    width: auto;
+}
+
+/* 右侧文字区域 */
+.footer-bottom-right {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    max-width: 900px;
+}
+
+/* 每一行的链接组 */
+.footer-links-group {
+    display: flex;
+    flex-wrap: wrap;
+
+    align-items: center;
+    color: #ccc;
+}
+
+.footer-links-group.footer-links-group-thin a {
+    text-decoration-thickness: 0.25px; /* 将 1.5px 改为 1px */
+}
+
+/* 第一行：版权信息和开发者链接 */
+.footer-first-line {
+    margin-top: 0.75rem;
+    margin-bottom: 0rem;
+}
+
+/* 第二行：其他超链接 */
+.footer-second-line a {
+    display: inline-block;
+    padding: 0 2px;
+    color: #ccc;
+    font-weight: 500;
+    text-decoration: underline;
+    text-decoration-color: #ccc;
+    text-decoration-thickness: 1.5px;
+    text-decoration-skip-ink: auto;
+    text-underline-offset: 1px;
+    transition: color 0.5s ease, text-decoration-color 0.5s ease;
+    font-size: 0.75rem;
+}
+
+/* 添加分隔符 */
+.footer-second-line a:not(:first-child)::before {
+    content: "|";
+    margin-left: 0.25rem;
+    margin-right: 0.5rem;
+}
+
+.footer-second-line a:hover {
+    color: #fff;
+    text-decoration-color: transparent;
+}
+
+
+/* 以下规则确保上半部分样式不影响下半部分链接 */
+.footer-style-links a {
+    color: #ccc;
+    font-weight: 500;
+    text-decoration: underline;
+    text-decoration-color: #ccc;
+    text-decoration-thickness: 1.5px;
+    text-decoration-skip-ink: auto;
+    text-underline-offset: 1px;
+    transition: color 0.5s ease, text-decoration-color 0.5s ease;
+}
+
+.footer-style-links a:hover {
+    color: #fff;
+    text-decoration-color: transparent;
+}
+
+/* 开发者信息 */
+.footer-links-group .developer-link {
+    color: #ccc;
+    text-decoration: underline;
+    text-decoration-color: #ccc;
+    text-decoration-thickness: 1.5px;
+    text-decoration-skip-ink: auto;
+    text-underline-offset: 1px;
+    transition: color 0.5s ease, text-decoration-color 0.5s ease;
+}
+
+.footer-links-group .developer-link:hover {
+    color: #fff;
+    text-decoration-color: transparent;
+}
+
+/* 额外链接（法律、隐私等） */
+.footer-links-group-thin .footer-links-group a {
+    display: inline-block;
+    padding: 0 2px;
+    color: #ccc;
+    font-weight: 500;
+    text-decoration: underline;
+    text-decoration-color: #ccc;
+    text-decoration-thickness: 0.25px;
+    text-decoration-skip-ink: auto;
+    text-underline-offset: 0.5px;
+    transition: color 0.5s ease, text-decoration-color 0.5s ease;
+}
+
+.footer-links-group-thin .footer-links-group a:hover {
+    color: #fff;
+    text-decoration-color: transparent;
+}
+

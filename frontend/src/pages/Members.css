@@ -1,0 +1,98 @@
+.members-page {
+    width: 75%;
+    margin: 2rem auto;
+    font-family: inherit; /* 与头部和尾部统一的字体 */
+    color: #333;
+}
+
+/* 删除页首标题 */
+
+/* 成员列表容器 */
+.members-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* 每个成员之间用不明显的横线隔开 */
+.member-card {
+    display: flex;
+    align-items: flex-start;
+    padding: 1rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.member-card:last-child {
+    border-bottom: none;
+}
+
+/* 左侧部分：固定宽度30%，用直角矩形边框包裹 */
+.member-left {
+    flex: 0 0 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 2rem;
+
+    border: 1px solid #ddd;
+    border-radius: 0; /* 四个角均为直角 */
+}
+
+.avatar-wrapper {
+    width: 100%;
+    text-align: center;
+}
+
+.avatar {
+    width: 100%;  /* 头像图片按比例放大，与左侧矩形框宽度一致 */
+    height: auto;
+    border-radius: 0; /* 头像四角直角 */
+}
+
+/* 图标链接部分 */
+.icon-links {
+    margin-top: 0.3rem;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.icon-links a {
+    display: inline-block;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+}
+
+/* 右侧部分：占据剩余空间，文本从上到下排列 */
+.member-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.member-name {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.member-title {
+    margin: 0rem 0;
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.member-bio {
+    margin: 1rem 0;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #444;
+}
+
+

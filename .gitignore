@@ -1,0 +1,23 @@
+# Local environments, credentials and caches
+**/node_modules/
+**/.venv/
+**/venv/
+**/__pycache__/
+*.py[cod]
+**/.idea/
+**/.vscode/
+**/.env
+**/.env.*
+!**/.env.example
+**/build/
+**/dist/
+**/coverage/
+*.log
+*.lnk
+.DS_Store
+Thumbs.db
+# Models intentionally withheld from this release
+**/*RuleFit*.pkl
+**/*rulefit*.pkl
+Oday/
+pkl file/

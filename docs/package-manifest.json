@@ -1,0 +1,365 @@
+{
+  "note": "This manifest excludes itself.",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 157,
+      "sha256": "7fb727e193b5465abf5ffdbdb6ad98c627b66eb51c7305944927b6e666a27989"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 328,
+      "sha256": "71ed58bd2f76a2aca1f5b54efd9d47cbbf611ff162f0069ac1c21e4a1208f497"
+    },
+    {
+      "path": "backend/.env.example",
+      "bytes": 294,
+      "sha256": "2ea937e9ae39bf58672ae7b562b1a8c571311405257c30772d71eb9d3f5ac49a"
+    },
+    {
+      "path": "backend/app.py",
+      "bytes": 5638,
+      "sha256": "e65f184fcb3f241463d407bc308993bc8eb593355e09660488f028f0a4e1b417"
+    },
+    {
+      "path": "backend/forms.py",
+      "bytes": 822,
+      "sha256": "36cc45183c2440077ee3a84b955ab1f85c07957089433725f9faf22a887f525c"
+    },
+    {
+      "path": "backend/helper.py",
+      "bytes": 4332,
+      "sha256": "4be13eac1176642e9c6bfb7fb75ef8c25f61fcaf59daf87da271c3adc234f6c4"
+    },
+    {
+      "path": "backend/models/Elaborative XGBoost.json",
+      "bytes": 280279,
+      "sha256": "ddc5df9352e6718c8ead845356075988da6d08e53e4d0d687a95731832c385d3"
+    },
+    {
+      "path": "backend/models/Two-level Ensemble/scaler.pkl",
+      "bytes": 1999,
+      "sha256": "586741a80ac4af64346a15331a3fc4316125ea4c7d0402444ec6d11396e478c5"
+    },
+    {
+      "path": "backend/models/Two-level Ensemble/Two-level Ensemble.pkl",
+      "bytes": 702816259,
+      "sha256": "d5f3b598377de394a8a84d2e312c6ad1bd5c0289faf7e49cf2a5992683dd0628"
+    },
+    {
+      "path": "backend/requirements.txt",
+      "bytes": 319,
+      "sha256": "c77c08b155fe0c73deb237e0cfe1ce27c6d9573862d66812d2f8139f3c31f127"
+    },
+    {
+      "path": "backend/templates/index.html",
+      "bytes": 485,
+      "sha256": "b2953e21239689ad860168edf14556f9260cc0088e16d03adba426fb5248ca4d"
+    },
+    {
+      "path": "backend/templates/layout.html",
+      "bytes": 678,
+      "sha256": "12b0ff73c1c9ca825592be695c4e9bf287fe5399264d680f736627991ff0b56a"
+    },
+    {
+      "path": "backend/templates/models.html",
+      "bytes": 283,
+      "sha256": "67b1f9b381f4cc8ee97ef0124fe9956663496ff4ebb1b964014cf2f080c74282"
+    },
+    {
+      "path": "backend/templates/result.html",
+      "bytes": 292,
+      "sha256": "5f39fe08c2ad077e64f784023a7909809daa0c2820394bc52cfd90fecb0722c4"
+    },
+    {
+      "path": "docs/attribution.md",
+      "bytes": 912,
+      "sha256": "ea134ee4eb13047ddad37e4425a6dd12bc354cea5f9742b6f098ad2c1d9fb03c"
+    },
+    {
+      "path": "docs/model-artifacts.json",
+      "bytes": 572,
+      "sha256": "c1cbda438c41b78a6dfbb0c26a9da192f4ef8f173e0dc716796c64c88d022bbc"
+    },
+    {
+      "path": "docs/release-notes.md",
+      "bytes": 2356,
+      "sha256": "d84388adb98d5067b07a96a99c7e6351c1b0a0f98ecaca0dbc757d1f8a44517b"
+    },
+    {
+      "path": "docs/screenshots/elaborative-xgboost-original.png",
+      "bytes": 1239379,
+      "sha256": "e9a08d31b7f61af8cbcbc6d951f600057a3add81c4d00a3096023d5cd5861312"
+    },
+    {
+      "path": "docs/screenshots/two-level-ensemble-original.png",
+      "bytes": 1348105,
+      "sha256": "d02a07a7c4badec31261e1a73be48b7a8cf07fd44b2efbf8dca6d73175d9ebcb"
+    },
+    {
+      "path": "docs/upload-to-github.md",
+      "bytes": 1700,
+      "sha256": "7ccd5d24fd939790426b9366e585d082c0cd2930ad62c11caff16f2f8b677d42"
+    },
+    {
+      "path": "docs/verification.md",
+      "bytes": 1245,
+      "sha256": "88f79df2f1460af4d0771b8878fca310304c91d8472edcd9da484a406dc38f9a"
+    },
+    {
+      "path": "frontend/package-lock.json",
+      "bytes": 633420,
+      "sha256": "d28e5535578030476ad87c5199adab5f218ae906cceee9100e78df9a30853436"
+    },
+    {
+      "path": "frontend/package.json",
+      "bytes": 913,
+      "sha256": "2891599a5af4a9ed2a00164a115d8e19220815eee2e777dd4bece2cfd8c63bab"
+    },
+    {
+      "path": "frontend/public/favicon.ico",
+      "bytes": 3870,
+      "sha256": "3d10f7da6c603178340081668c4ac5b3ae9743ca9a262ab0fcd312fbb9f48bdd"
+    },
+    {
+      "path": "frontend/public/index.html",
+      "bytes": 1721,
+      "sha256": "20afc17b6358bfdf5d74513225cd4a73443fa0bd15b944af71e143f694a5cf7c"
+    },
+    {
+      "path": "frontend/public/logo192.png",
+      "bytes": 5347,
+      "sha256": "c386396ec70db3608075b5fbfaac4ab1ccaa86ba05a68ab393ec551eb66c3e00"
+    },
+    {
+      "path": "frontend/public/logo512.png",
+      "bytes": 9664,
+      "sha256": "9ea4f4da7050c0cc408926f6a39c253624e9babb1d43c7977cd821445a60b461"
+    },
+    {
+      "path": "frontend/public/manifest.json",
+      "bytes": 492,
+      "sha256": "50b3d8c3903af3f78d871b94557ab14f4e39ca192eaca3d2cfa863c867279a14"
+    },
+    {
+      "path": "frontend/public/robots.txt",
+      "bytes": 67,
+      "sha256": "90d24bc3bf698ac1e173739502298ccca72adf1f564fab05f484b8c48d1cadd2"
+    },
+    {
+      "path": "frontend/src/App.js",
+      "bytes": 1217,
+      "sha256": "2a5fdabb852f9ddf10c4019696ce311f1cb8cfeec02a5d745f767958fe7efd07"
+    },
+    {
+      "path": "frontend/src/assets/building.jpg",
+      "bytes": 1451682,
+      "sha256": "ef83b04351d931bfc523ccef09f8bebc5d68dc627b899d6b289834923bd4d30c"
+    },
+    {
+      "path": "frontend/src/assets/demography.png",
+      "bytes": 568,
+      "sha256": "07d8e85d340dd598b6c7061c2a711eb983ef9d93f9827482c0e3e7ce1937affe"
+    },
+    {
+      "path": "frontend/src/assets/Diabetic 2.jpg",
+      "bytes": 58568,
+      "sha256": "71f069dcd3bafa041ea06eb876dcf9f508b53fd20141ea6be256a173f428a736"
+    },
+    {
+      "path": "frontend/src/assets/Elmira.jpg",
+      "bytes": 317592,
+      "sha256": "bfb3e0b9f09b66d7db9dbdc96e8bd262c064d9755037cc65a077e53d4cc284ff"
+    },
+    {
+      "path": "frontend/src/assets/Enrico.jpg",
+      "bytes": 373145,
+      "sha256": "145021174c86c09a7473817563f609c0c43c1aa4cf161cd866bd7e64f7551953"
+    },
+    {
+      "path": "frontend/src/assets/github.png",
+      "bytes": 1107,
+      "sha256": "61f83f15acef96504a9872fdc853ab3a2190194e33b3535fd6aca2d1174958ed"
+    },
+    {
+      "path": "frontend/src/assets/Google Drive.png",
+      "bytes": 2966,
+      "sha256": "624d5c277660ccf5cc6a7055c33316081a588c203c82f77f9e0761417fd13375"
+    },
+    {
+      "path": "frontend/src/assets/Layer 1 Facebook.png",
+      "bytes": 56289,
+      "sha256": "eea0cc74da7f2f7c3b3a38d0e3e66e9f35f4d3ad2fb29079a7b7483c609b231f"
+    },
+    {
+      "path": "frontend/src/assets/Layer 2 X.png",
+      "bytes": 111492,
+      "sha256": "e217e71729154e176b4b62f40afd2ff38f30e1780f8211e85ef434f4e42a1c36"
+    },
+    {
+      "path": "frontend/src/assets/Layer 3 Instagram.png",
+      "bytes": 97660,
+      "sha256": "eff23a2e5f798720c05b8a5858e65c3e97388cd3009c60760ca419ec4317b9d9"
+    },
+    {
+      "path": "frontend/src/assets/Layer 4 LinkedIn.png",
+      "bytes": 63966,
+      "sha256": "023aa5cbeb9e0fe24ed822ae02b1b021f14905dc12947d04f11e9cc4fc743e7c"
+    },
+    {
+      "path": "frontend/src/assets/link.png",
+      "bytes": 388,
+      "sha256": "f5755929c5579069fe575ffb6fdf5684cc930637025b07018065f3b150ed5663"
+    },
+    {
+      "path": "frontend/src/assets/linkedin.png",
+      "bytes": 504,
+      "sha256": "c867197d9cc6d505fdaf37911f76fb960497a903fd0170d74fd6cb1fc4ba1a91"
+    },
+    {
+      "path": "frontend/src/assets/Mahyar.jpg",
+      "bytes": 107701,
+      "sha256": "77292bcddaf9dcb731dc8966ad111f971afa0ecfe65574ade8ccc16c938d7a7b"
+    },
+    {
+      "path": "frontend/src/assets/mail.png",
+      "bytes": 605,
+      "sha256": "1df85dc221d64871fff7f5ff8473339f71d4f96aeae242117027c847755c67b7"
+    },
+    {
+      "path": "frontend/src/assets/Oday.jpg",
+      "bytes": 307839,
+      "sha256": "6c88c7cfe2c4379cfc80488e51a44c35a9c0f98571df0ebdaaf51cdc809d855f"
+    },
+    {
+      "path": "frontend/src/assets/office.jpg",
+      "bytes": 327550,
+      "sha256": "a3fbe65c0e66f1213468078f90f462dc17fe5a3433a448e1ad45215c0ebcfbee"
+    },
+    {
+      "path": "frontend/src/assets/Retinopathy 2.jpg",
+      "bytes": 34849,
+      "sha256": "af5211f0a566eea9b5939f17da07ac5fc7da8b8e31f9b4fe6941a655b40cd243"
+    },
+    {
+      "path": "frontend/src/assets/SSRN.png",
+      "bytes": 6680,
+      "sha256": "9ccd53a43bf0377357f7bc803a69cc114e2976f32259110a08f889263afda65e"
+    },
+    {
+      "path": "frontend/src/assets/Tieming.jpg",
+      "bytes": 100397,
+      "sha256": "9c424a35c4768603d05a408ef50363c86af11fb7c945bf8eb341a54cb4d756d7"
+    },
+    {
+      "path": "frontend/src/assets/Yingfan.jpg",
+      "bytes": 103053,
+      "sha256": "76c06f216e57e9a1918c4b97d3c73faa5c6593ca54eb5f8594e5b2da59149b93"
+    },
+    {
+      "path": "frontend/src/components/Footer.css",
+      "bytes": 6530,
+      "sha256": "10dcaf43af5d5c2ca25bd352870d4cababf3dcad9e5e966e0effd8dfc43cd764"
+    },
+    {
+      "path": "frontend/src/components/Footer.js",
+      "bytes": 8496,
+      "sha256": "f6e1337aadbae0c47a577b54f6675e161b68076b5888955733fbe819d353bffd"
+    },
+    {
+      "path": "frontend/src/components/Header.css",
+      "bytes": 5141,
+      "sha256": "3bb9116d7d1b94860919eed76c74462c63cb0d66dbe355fc0b45e879cd5f596c"
+    },
+    {
+      "path": "frontend/src/components/Header.js",
+      "bytes": 4964,
+      "sha256": "206707d4930a3d207ac0a03265fa5de8a676432df8731b5740bc312ab3376533"
+    },
+    {
+      "path": "frontend/src/components/PredictionForm.js",
+      "bytes": 17213,
+      "sha256": "34ea74afbea02ba370e3c65f1fad2ea3e3331056ffd1f1097e8ecab1f0597f0b"
+    },
+    {
+      "path": "frontend/src/components/ScrollToTop.js",
+      "bytes": 284,
+      "sha256": "91c4a78e1f922e1c4a357c6164731634435f87e6652fbef9a55d7b077f5f8a37"
+    },
+    {
+      "path": "frontend/src/index.css",
+      "bytes": 366,
+      "sha256": "daf22c296c801d3d533083361cc59fbdc22e5bfe528aa4bad1973b54cc5448a4"
+    },
+    {
+      "path": "frontend/src/index.js",
+      "bytes": 535,
+      "sha256": "39f6891bebce856ce604ea450f08ace26fa1b931415985881fbb323f63ba26fb"
+    },
+    {
+      "path": "frontend/src/pages/Contact.css",
+      "bytes": 1254,
+      "sha256": "67c57f2396638cdb73c4625c0f5f00b96eb0ea8cb02b3af18a4ae2918a040ccf"
+    },
+    {
+      "path": "frontend/src/pages/Contact.js",
+      "bytes": 5274,
+      "sha256": "fe588ffc0c648cacf33e8a5d27a6215b2468428d13970ce792bc18b29960eb2e"
+    },
+    {
+      "path": "frontend/src/pages/Elaborative_XGBoost.css",
+      "bytes": 5885,
+      "sha256": "91cc4b185e806f48f68009070d8dfadf4c47e414e34a45d7970521c460a9019f"
+    },
+    {
+      "path": "frontend/src/pages/Elaborative_XGBoost.js",
+      "bytes": 3610,
+      "sha256": "6865df7df93a803c6ae361f721e31f9d1edf652d6e647a8cb12236efa9de4741"
+    },
+    {
+      "path": "frontend/src/pages/Home.css",
+      "bytes": 3364,
+      "sha256": "aa8403114533b655d8db29d6e754260334dd399f6e881e808d5c71172926e252"
+    },
+    {
+      "path": "frontend/src/pages/Home.js",
+      "bytes": 5432,
+      "sha256": "865c204ca0d0cace60a5edb5f470cb45a2161eabefd7ac842d41d341b4dc3d35"
+    },
+    {
+      "path": "frontend/src/pages/Members.css",
+      "bytes": 1818,
+      "sha256": "6f5b54d93ddf192e0d2ac2be30317d653b0e219425cb45393bb739d545fc5a18"
+    },
+    {
+      "path": "frontend/src/pages/Members.js",
+      "bytes": 12513,
+      "sha256": "c68a4fd6ef24b24cf045971b3e652084ab52372e2d6c419c4ebf9d71ba531e4d"
+    },
+    {
+      "path": "frontend/src/pages/Models.js",
+      "bytes": 1160,
+      "sha256": "14a539729f08db0ee80fe50e556f23578c0d91e6062017f313e0f639bd8377fe"
+    },
+    {
+      "path": "frontend/src/pages/Two-level_Ensemble.css",
+      "bytes": 6312,
+      "sha256": "83b46ec232d4206007374a2cc78793cb9fbb6d44ec344891e3eec9e3c38f8f43"
+    },
+    {
+      "path": "frontend/src/pages/Two-level_Ensemble.js",
+      "bytes": 3457,
+      "sha256": "02cc3dedc5165e285505f619a0214f1bbd31a67d86e626f98de21d422da0edec"
+    },
+    {
+      "path": "frontend/src/reportWebVitals.js",
+      "bytes": 362,
+      "sha256": "714851669856152806c289f9aac6240b414bbac50c60ee4f7e6247f31eac0c1c"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4107,
+      "sha256": "41d4fd1a1cace7039db90ec65ac8be50356af1d4a7e2f2e9fb68ea6b30f93da0"
+    }
+  ]
+}
