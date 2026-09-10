@@ -4,18 +4,6 @@ A Flask and React application that accepts routine clinical measurements and dis
 
 This release includes **Elaborative XGBoost** (8 inputs) and **Two-level Ensemble** (25 inputs, with its paired scaler). RuleFit and Pruned RuleFit are not distributed or available through this release's interface.
 
-## Application preview
-
-The Elaborative XGBoost page generates an eight-feature input form from the backend model metadata.
-
-<p align="center">
-  <a href="docs/screenshots/elaborative-xgboost-original.png">
-    <img src="docs/screenshots/elaborative-xgboost-original.png" alt="Elaborative XGBoost interface with eight clinical input fields and a prediction result area" width="640">
-  </a>
-</p>
-
-*Original demonstration screenshot, shown before input submission. Navigation may differ from this release; only Elaborative XGBoost and Two-level Ensemble are available. Click the image to view it at full resolution.*
-
 ## Architecture
 
 The React model pages share `PredictionForm`. It retrieves ordered feature names from Flask, creates numeric and categorical fields, and posts an ordered numeric array for inference. Flask discovers artifacts under `backend/models/` at startup. The ensemble wrapper applies its paired scaler before prediction. The response is a binary classification displayed as a high- or low-risk message.
@@ -23,7 +11,7 @@ The React model pages share `PredictionForm`. It retrieves ordered feature names
 ```text
 backend/       Flask API, legacy Jinja templates, model artifacts
 frontend/      React pages, shared components and used visual assets
-docs/          Model manifest, original screenshots and release notes
+docs/          Model manifest and release notes
 ```
 
 ## Run locally
@@ -67,16 +55,6 @@ Synthetic request example, not a clinical reference case:
 ```
 
 The prediction response is `{"prediction": 0}` or `{"prediction": 1}`. It does not contain a probability, confidence interval or patient-specific explanation.
-
-## Screenshots
-
-The XGBoost preview appears above. The additional screenshot below is also from the original source application; it is not a newly tested release build.
-
-<details>
-<summary>Two-level Ensemble</summary>
-
-![Original Two-level Ensemble page](docs/screenshots/two-level-ensemble-original.png)
-</details>
 
 ## Scope and attribution
 
