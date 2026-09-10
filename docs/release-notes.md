@@ -18,6 +18,5 @@
 - Contact.js sends `email`, but `/send_email` expects `user_email` and `recipient`. SMTP settings also need real shell environment values. The contact form is not ready for end-to-end use in the unchanged backend.
 - The legacy Flask `/about` route references a missing `about.html`; its layout references missing `static/styles.css`. These are pre-existing legacy-page gaps and do not supply the React interface.
 - The original default React test referenced a removed “learn react” link and was not included. No project-specific automated test suite is claimed.
-- Original screenshots may show navigation items absent from the publication copy.
 
 See verification.md for checks actually performed on this package.

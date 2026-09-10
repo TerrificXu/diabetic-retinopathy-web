@@ -83,18 +83,8 @@
     },
     {
       "path": "docs/release-notes.md",
-      "bytes": 2356,
-      "sha256": "d84388adb98d5067b07a96a99c7e6351c1b0a0f98ecaca0dbc757d1f8a44517b"
-    },
-    {
-      "path": "docs/screenshots/elaborative-xgboost-original.png",
-      "bytes": 1297104,
-      "sha256": "2efb851345f95e9e266a8a9c055be82bc37342ec9c1fee996354e52ad1e054df"
-    },
-    {
-      "path": "docs/screenshots/two-level-ensemble-original.png",
-      "bytes": 1348105,
-      "sha256": "d02a07a7c4badec31261e1a73be48b7a8cf07fd44b2efbf8dca6d73175d9ebcb"
+      "bytes": 2273,
+      "sha256": "b316c960f450490571ecacd4396ca3d027d812d73391fe5cd2b4cfc62ae9eb05"
     },
     {
       "path": "docs/upload-to-github.md",
